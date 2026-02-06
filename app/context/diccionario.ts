@@ -25,6 +25,8 @@ const dictionaries: any = {
         errorButton: 'Try again',
         notFoundTitle: '404 - Page Not Found',
         backToHome: 'Back to Home',
+        next: 'Next',
+        previous: 'Previous',
     },
     es: {
         title: 'Bienvenido a mi página',
@@ -52,6 +54,8 @@ const dictionaries: any = {
         errorButton: 'Reintentar',
         notFoundTitle: '404 - Página no encontrada',
         backToHome: 'Volver al Inicio',
+        next: 'Siguiente',
+        previous: 'Anterior',
     },
     fr: {
         title: 'Bienvenue sur ma page',
@@ -79,6 +83,8 @@ const dictionaries: any = {
         errorButton: 'Réessayer',
         notFoundTitle: '404 - Page non trouvée',
         backToHome: 'Retour à l\'accueil',
+        next: 'Suivant',
+        previous: 'Précédent',
     }
 };
 

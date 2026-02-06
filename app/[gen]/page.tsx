@@ -7,7 +7,7 @@ import { useLanguage } from '../context/LanguajeContext';
 const RANGE: Record<string, { start: number; end: number }> = {
     gen1: { start: 1, end: 151 },
     gen2: { start: 152, end: 251 },
-    gen3: { start: 252, end: 386 },
+
     gen4: { start: 387, end: 493 },
     gen5: { start: 494, end: 649 },
     gen6: { start: 650, end: 721 },

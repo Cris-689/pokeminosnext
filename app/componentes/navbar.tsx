@@ -25,13 +25,20 @@ function NAVARRA() {
         <Dropdown.Menu>
           <Dropdown.Item as={Link} href='/gen1'>{dict.gen1}</Dropdown.Item>
           <Dropdown.Item as={Link} href='/gen2'>{dict.gen2}</Dropdown.Item>
-          <Dropdown.Item as={Link} href='/gen3'>{dict.gen3}</Dropdown.Item>
+              <Dropdown.Toggle variant="link" className="text-decoration-none fw-bold text-danger">
+            {dict.generation}
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item as={Link} href='/gen3'>{dict.gen3}</Dropdown.Item>
+              <Dropdown.Item as={Link} href='/gen4'>{dict.gen4}</Dropdown.Item>
+            </Dropdown.Menu>
+          {/* <Dropdown.Item as={Link} href='/gen3'>{dict.gen3}</Dropdown.Item>
           <Dropdown.Item as={Link} href='/gen4'>{dict.gen4}</Dropdown.Item>
           <Dropdown.Item as={Link} href='/gen5'>{dict.gen5}</Dropdown.Item>
           <Dropdown.Item as={Link} href='/gen6'>{dict.gen6}</Dropdown.Item>
           <Dropdown.Item as={Link} href='/gen7'>{dict.gen7}</Dropdown.Item>
           <Dropdown.Item as={Link} href='/gen8'>{dict.gen8}</Dropdown.Item>
-          <Dropdown.Item as={Link} href='/gen9'>{dict.gen9}</Dropdown.Item>
+          <Dropdown.Item as={Link} href='/gen9'>{dict.gen9}</Dropdown.Item> */}
         </Dropdown.Menu>
       </Dropdown>
 

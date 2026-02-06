@@ -9,7 +9,12 @@ export default function PokemonDetailPage() {
     const router = useRouter();
     const { dict } = useLanguage();
     const [pokemon, setPokemon] = useState<any>(null);
-
+    const dex = Number(id);
+    
+    // Contante X = Y condicion ? valor modificado : valor por defecto
+    const idPre = dex > 1 ? dex - 1 : 1;
+    const idNext = dex < 1000 ? dex + 1 : 1000;
+    
     useEffect(() => {
         if (id) {
             fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
@@ -55,8 +60,14 @@ export default function PokemonDetailPage() {
                         </div>
                     ))}
                 </div>
-
+                
                 <div className="mt-4">
+                    <Button variant="danger" className="px-5" onClick={() => router.push(`/pokemon/${idPre}`)}>
+                        {dict.previous}
+                    </Button>
+                    <Button variant="danger" className="px-5" onClick={() => router.push(`/pokemon/${idNext}`)}>
+                        {dict.next}
+                    </Button>
                     <Button variant="danger" className="px-5" onClick={() => router.back()}>
                         {dict.close}
                     </Button>
